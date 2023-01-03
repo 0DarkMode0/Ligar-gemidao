@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ligação do Gemidão!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Ligação do Gemidão</h1>
+        <p>Ligue para algum dso seus "amigos" com o gemidão do zap</br><b>( CUIDADO! )</b></p>
+        <hr>
+      </div>
+      <div class="col-md-4 ml-auto mr-auto">
+        <div class="form-group">
+          <label for="to">Número da vitima</label>
+          <input type="number" class="form-control" id="to" placeholder="+55 00 000000000">
+          <small id="emailHelp" class="form-text text-muted">Digite apenas números.</small>
+        </div>
+        <button class="btn btn-primary btn-block" style="coursor: pointer" id="send" onclick="send()">Ligar</button>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <div id="result" class="lead m-5 text-danger text-uppercase">
+  </div>
+  <div style="text-align:center">
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6934296242213124"
+     data-ad-slot="2499572193"
+     data-ad-format="auto"></ins>
+  </div>
+</body>
+
+
+<script type="text/javascript">
+function send() {
+  var container = document.createElement('div');
+  container.align = 'center';
+  var result = document.getElementById('result');
+  var audio = document.createElement('audio');
+  // audio.autoplay = true;
+  audio.play();
+  var source = document.createElement('source');
+  source.type = 'audio/mpeg';
+  source.src = 'gemidao.mp3';
+  var message = document.createTextNode('SE FUDEO OTÁRIO KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK');
+  audio.appendChild(source);
+  container.appendChild(audio);
+  container.appendChild(message);
+  result.appendChild(container);
+}
+</script>
+</html>
